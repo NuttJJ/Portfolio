@@ -113,14 +113,32 @@
     </div>
 
     <div class="container flex justify-center bg-black mx-auto max-w-full px-2 sm:px-6 lg:px-8">
-        <div class="container flex justify-center mt-14 "><img src="/Picture/profile.jpg"
-                class="  h-80 w-80 object-cover rounded-3xl alt=" profile2"></div>
+        <div class="container flex flex-col items-center justify-center mt-14">
+            <!-- Image -->
+            <div class="flex items-center justify-center">
+                <img src="/Picture/profile.jpg" class=" h-80 w-80 object-cover rounded-3xl" alt="profile2">
+            </div>
+            <!-- Resume and Transcript Buttons -->
+            <div class="flex items-center justify-center gap-4 ">
+                <a href="/Picture/Resume_Nutt.pdf" target="_blank">
+                    <button class=" mr-1 my-4 focus hover:bg-slate-400 rounded-lg ring-2 ring-sky-500 focus:ring focus:ring-violet-300 text-white">
+                        <p class="px-3 py-1">Resume</p>
+                    </button>
+                </a>
+                <a href="/Picture/Transcript.pdf" target="_blank">
+                    <button class="mr-1 my-2 focus hover:bg-slate-400 rounded-lg ring-2 ring-sky-500 focus:ring focus:ring-violet-300 text-white">
+                        <p class="px-3 py-1">Transcript</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+        
         <div class="container m-10 text-white sm:text-sm lg:text-lg">
             <div class="info">
                 <h1 class="text-xl mb-3">About Me</h1>
-                <p class=":text-md">Hello, my name is Nutt Jangjit.I'm
-                    currently studying at King Mongkut's Institute of. Technology Ladkrabang Prince of Chumphon Campus
-                    majoring in Computer Engineering faculty.</p><br>
+                <p class=":xl:text-lg lg:text-lg md:text-md sm:text-sm">Hello, my name is Nutt Jangjit. I'm
+                    currently studying at KMITL majoring in Computer Engineering faculty.</p><br>
             </div>
             <div class="container rounded-3xl" style="background-color: #34282c;">
                 <div class="row flex justify-center m-2">
@@ -132,20 +150,22 @@
                             <p>Address : Bangkok,Thailand</p>
                         </div>
                         <div class="info-education m-5">
-                            <p><i class="fa-solid fa-school"></i>  : Bachelor of Computer Engineering</p>
-                            <p><i class="fa-solid fa-building-columns"></i>  : KMITL PCC</p>
+                            <p><i class="fa-solid fa-school"></i> : Bachelor of Computer Engineering</p>
+                            <p><i class="fa-solid fa-building-columns"></i> : KMITL PCC</p>
                             <p>Expected to graduate in 2025</p>
                             <p>GPAX : 3.45</p>
                         </div>
                     </div>
                 </div>
-                <div class="container flex justify-start pb-8 pl-6">
-                    <a href="https://github.com/NuttJJ" target="_blank"><i
-                            class="fa-brands fa-github px-1 py-1 text-3xl" style="color: white;"></i></a>
-                    <a href="https://www.facebook.com/fox.nutt" target="_blank"><i
-                            class="fa-brands fa-facebook px-2 py-1 text-3xl" style="color: skyblue;"></i></a>
-                    <a href="https://www.instagram.com/nutt.jj" target="_blank" class="justify-center"><i
-                            class="fa-brands fa-instagram px-2 py-1 text-3xl rounded-xl bg-gradient-to-r from-pink-500 to-yellow-500"></i></a>
+                <div class="container pb-8 pl-6 flex">
+                    <div class="container flex justify-start">
+                        <a href="https://github.com/NuttJJ" target="_blank"><i
+                                class="fa-brands fa-github px-1 py-1 text-3xl" style="color: white;"></i></a>
+                        <a href="https://www.facebook.com/fox.nutt" target="_blank"><i
+                                class="fa-brands fa-facebook px-2 py-1 text-3xl" style="color: skyblue;"></i></a>
+                        <a href="https://www.instagram.com/nutt.jj" target="_blank" class="justify-center"><i
+                                class="fa-brands fa-instagram px-2 py-1 text-3xl rounded-xl bg-gradient-to-r from-pink-500 to-yellow-500"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,7 +214,7 @@
                 </div>
         </div>
     </div> -->
-    
+
     <div class="container bg-black pt-2 mx-auto max-w-full px-2 sm:px-6 lg:px-8">
         <div class="container flex justify-center gap-4 pt-2 mx-auto max-w-full px-2 sm:px-6 lg:px-8 p-8">
             <div class="hardskill">
@@ -236,7 +256,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="softskill">
                 <div class="name text-white text-center p-5">SOFT SKILLS</div>
                 <div class="iconskill py-3 px-5 items-center rounded-3xl">
@@ -276,7 +296,83 @@
                     </div>
                 </div>
             </div>
-            
+
+        </div>
+    </div>
+
+    <!-- Slide shows -->
+    <div class="container bg-black flex justify-center gap-4 pt-2 mx-auto max-w-full px-2 sm:px-6 lg:px-8 p-10">
+        <div class="container">
+            <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="/Portfolio/Picture/profile.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/Portfolio/Picture/bg-space.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/Portfolio/Picture/tailwind-icon.svg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/Portfolio/Picture/profile.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/Portfolio/Picture/profile.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -286,7 +382,6 @@
 
 
 
-    
 
     <script src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>

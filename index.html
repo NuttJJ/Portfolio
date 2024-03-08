@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css  ">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+
+    <nav class="bg-gray-900">
+        <div class="mx-auto max-w-full px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <img class="h-10 w-10 object-cover rounded-full profile-picture hidden sm:block"
+                            src="Picture/นศ.jpg" alt="Your Company">
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                aria-current="page">Home</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
+                                Me</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Project</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="lastnav">
+                    <a href="https://github.com/NuttJJ" target="_blank"><i class="fa-brands fa-github px-1py-1 text-3xl"
+                            style="color: white;"></i></a>
+                    <a href="https://www.facebook.com/fox.nutt" target="_blank"><i
+                            class="fa-brands fa-facebook px-2 py-1 text-3xl" style="color: skyblue;"></i></a>
+                    <a href="https://www.instagram.com/nutt.jj" target="_blank"><i
+                            class="fa-brands fa-instagram px-2 py-1 text-3xl" style="color: white;"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class=" px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                    aria-current="page">Home</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Me</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Project</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container bg-[url('Picture/bg-space.jpg')] mx-auto max-w-full px-2 sm:px-6 lg:px-8">
+        <div class="container flex justify-center mx-auto max-w-full px-2 sm:px-6 lg:px-8">
+            <img src="/Picture/profile.jpg" class="my-20 ml-5 mr-20 h-80 w-80 object-cover rounded-3xl" alt="profile">
+            <div class="info my-40 text-white">
+                <span class="text-5xl">HI, I'm Nutt</span>
+                <h2>I'm third-year student who's majoring <br> in computer engineering</h2>
+                <a href="/Picture/Resume_Nutt.pdf" target="_blank"><button
+                        class="mr-1 my-2 bg-sky-500 hover:bg-sky-700 rounded-lg active:bg-sky-500 focus:outline-none focus:ring focus:ring-violet-300">
+                        <p class="px-3 py-1">Resume</p>
+                    </button></a>
+                <a href="#">
+                    <button
+                        class="my-2 focus hover:bg-slate-400 rounded-lg ring-2 ring-sky-500 focus:ring focus:ring-violet-300">
+                        <p class="px-3 py-1">My Project</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container flex justify-center bg-black mx-auto max-w-full px-2 sm:px-6 lg:px-8">
+        <div class="container flex justify-center m-10 "><img src="/Picture/profile.jpg"
+                class="  h-80 w-80 object-cover rounded-3xl alt=" profile2"></div>
+        <div class="container m-10 text-white sm:text-sm lg:text-lg">
+            <div class="info">
+                <h1 class="text-xl mb-3">About Me</h1>
+                <p class=":text-md">Hello, my name is Nutt Jangjit.I'm
+                    currently studying at King Mongkut's Institute of. Technology Ladkrabang Prince of Chumphon Campus
+                    majoring in Computer Engineering faculty.</p>
+            </div>
+            <div class="container m-5" style="background-color: #34282c;">
+                <div class="row flex justify-center m-5">
+                    <div class="grid grid-cols-2 xl:text-xl lg:text-lg md:text-md sm:text-sm">
+                        <div class="info-me m-5">
+                            <p>Name : Nutt Jangjit</p>
+                            <p>Phone : 091-850-3440</p>
+                            <p>E-mail : 64200055@kmitl.ac.th</p>
+                            <p>Address : Bangkok,Thailand</p>
+                        </div>
+                        <div class="info-education m-5">
+                            <p>Education : Bachelor of Computer Engineering</p>
+                            <p>University : KMITL PCC</p>
+                            <p>Expected to graduate in 2025</p>
+                            <p>GPPAX : 3.45</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container flex justify-start pb-10 pl-10">
+                    <a href="https://github.com/NuttJJ" target="_blank"><i
+                            class="fa-brands fa-github px-1 py-1 text-3xl" style="color: white;"></i></a>
+                    <a href="https://www.facebook.com/fox.nutt" target="_blank"><i
+                            class="fa-brands fa-facebook px-2 py-1 text-3xl" style="color: skyblue;"></i></a>
+                    <a href="https://www.instagram.com/nutt.jj" target="_blank" class="justify-center"><i
+                            class="fa-brands fa-instagram px-2 py-1 text-3xl rounded-xl bg-gradient-to-r from-pink-500 to-yellow-500"></i></a>
+                </div>
+            </div>
+            <div class="container"></div>
+        </div>
+    </div>
+
+
+    <div class="container bg-black pt-2 mx-auto max-w-full px-2 sm:px-6 lg:px-8 flex">
+        <div class="container mr-4">
+            <div class="container flex justify-center ">
+                <h1 class="text-white pt-4 font-mono text-xl">HARD SKILLS</h1>
+            </div>
+            <<div class="iconskill mb-3 items-center rounded-3xl">
+                <div class="grid grid-cols-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-brands fa-html5"></i>
+                        <span class="text-white mb-6">Basic HTML5</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-brands fa-css3-alt"></i>
+                        <span class="text-white mb-6">Basic CSS3</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-brands fa-js"></i>
+                        <span class="text-white mb-6">Basic JS</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-solid fa-code"></i>
+                        <span class="text-white mb-6">Tailwind CSS</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-brands fa-python"></i>
+                        <span class="text-white mb-6">Basic Python</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-solid fa-code"></i>
+                        <span class="text-white mb-6">Basic C/C++</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-brands fa-php"></i>
+                        <span class="text-white mb-6">Basic PHP</span>
+                    </div>
+                    <div class="icon flex flex-col items-center justify-center">
+                        <i class="text-5xl p-4 fa-solid fa-database"></i>
+                        <span class="text-white mb-6 ">Basic MySQL</span>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container flex justify-center ">
+            <h1 class="text-white pt-4 font-mono text-xl">SOFT SKILLS</h1>
+        </div>
+        <<div class="iconskill mb-3 bg-gray-800 items-center rounded-3xl">
+            <div class="grid grid-cols-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-html5"></i>
+                    <span class="text-white mb-6">Basic HTML5</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-css3-alt"></i>
+                    <span class="text-white mb-6">Basic CSS3</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-js"></i>
+                    <span class="text-white mb-6">Basic JS</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <img class="w-20 h-20 " src="/Picture/tailwind-icon.svg" alt="tailwind">
+                    <span class="text-white mb-6">Tailwind CSS</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-python"></i>
+                    <span class="text-white mb-6">Basic Python</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-html5"></i>
+                    <span class="text-white mb-6">Basic C/C++</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-html5"></i>
+                    <span class="text-white mb-6">Basic PHP</span>
+                </div>
+                <div class="icon flex flex-col items-center justify-center">
+                    <i class="text-5xl p-4 fa-brands fa-html5"></i>
+                    <span class="text-white mb-6 ">Basic MySQL</span>
+                </div>
+            </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bf110c3ae1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

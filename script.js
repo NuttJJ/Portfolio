@@ -8,3 +8,55 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.toggle("hidden");
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselItems = document.querySelectorAll('[data-carousel-item]');
+    const slideIndicators = document.querySelectorAll('[data-carousel-slide-to]');
+    const prevButton = document.querySelector('[data-carousel-prev]');
+    const nextButton = document.querySelector('[data-carousel-next]');
+
+    let currentIndex = 0;
+
+    // Function to show a particular slide
+    function showSlide(index) {
+        carouselItems.forEach(item => {
+            item.classList.add('hidden');
+        });
+        carouselItems[index].classList.remove('hidden');
+        currentIndex = index;
+        updateIndicators();
+    }
+
+    // Function to update slide indicators
+    function updateIndicators() {
+        slideIndicators.forEach((indicator, index) => {
+            if (index === currentIndex) {
+                indicator.setAttribute('aria-current', 'true');
+            } else {
+                indicator.setAttribute('aria-current', 'false');
+            }
+        });
+    }
+
+    // Event listener for previous button
+    prevButton.addEventListener('click', function () {
+        const newIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+        showSlide(newIndex);
+    });
+
+    // Event listener for next button
+    nextButton.addEventListener('click', function () {
+        const newIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+        showSlide(newIndex);
+    });
+
+    // Event listeners for slide indicators
+    slideIndicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', function () {
+            showSlide(index);
+        });
+    });
+
+    // Show the initial slide
+    showSlide(currentIndex);
+});

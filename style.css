@@ -23,3 +23,9 @@
     padding-top: 5%;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+

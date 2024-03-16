@@ -60,3 +60,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Show the initial slide
     showSlide(currentIndex);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const projectBtn = document.getElementById("project-btn");
+    const projectCarousel = document.getElementById("project-carousel");
+
+    // เพิ่ม event listener ให้กับปุ่ม "Project"
+    projectBtn.addEventListener("click", function (event) {
+        event.preventDefault(); // ป้องกันการโหลดหน้าใหม่เมื่อคลิกที่ลิงก์
+
+        // คำสั่งเลื่อนสไลด์ลงมายังส่วน Carousel
+        projectCarousel.scrollIntoView({ behavior: "smooth" });
+    });
+});
